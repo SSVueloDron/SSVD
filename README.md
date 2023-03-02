@@ -27,12 +27,12 @@ El cual es un comando para hacer que el dron empiece a volar, es decir se mantie
 
 Lo siguiente ahora es hacer un mapeo de las teclas,en python, que se usaran para manejar el dron, se utilizaron las teclas 
 
-- W - Mover hacia delante
-- S -  Mover hacia atrás
-- A - Mover a la izquierda
-- D - Mover a la derecha
-- Q - Rotar el dron a la izquierda
-- E - Rotar el dron a la derecha
+-  W - Mover hacia delante
+-  S -  Mover hacia atrás
+-  A - Mover a la izquierda
+-  D - Mover a la derecha
+-  Q - Rotar el dron a la izquierda
+-  E - Rotar el dron a la derecha
 - T - Despegar
 - Space - Aterrizar
 - Flecha hacia Arriba - Incrementar altura del dron
@@ -40,17 +40,21 @@ Lo siguiente ahora es hacer un mapeo de las teclas,en python, que se usaran para
 - H - Hovering
 - R - Release
 
-El código utilizado lo podemos ver enseguida: llamado `keyboard.py`
+## Código
+- El código utilizado lo podemos ver enseguida: llamado `keyboard.py`
 
-Lo que necesitábamos ahora es un intérprete de estas teclas, para poder conectarse al dron y que este pudiera ejecutar lo deseado, esto se realizó con el siguiente código en Python llamado `interpreter.py :`
+- Lo que necesitábamos ahora es un intérprete de estas teclas, para poder conectarse al dron y que este pudiera ejecutar lo deseado, esto se realizó con el siguiente código en Python llamado `interpreter.py :`
 
-Una vez que terminamos de codificar podemos ejecutarlos para poder manejar el dron, primero debemos ejecutar el intérprete para poder conectarse al dron, esto se hizo con el siguiente comando:
+- Una vez que terminamos de codificar podemos ejecutarlos para poder manejar el dron, primero debemos ejecutar el intérprete para poder conectarse al dron, esto se hizo con el siguiente comando:
 `$ python3 interpreter.py`
-Ahora ejecutamos el comando para utilizar las teclas para maniobrar el dron:
-`$ python3 keyboard.py`
-En seguida se nos mostrará lo siguiente:
 
-Ahora podemos maniobrar el dron Parrot Bebop con el teclado.
-Para poder Acceder a la cámara del Dron Bebop Utilizamos el comando:
+- Ahora ejecutamos el comando para utilizar las teclas para maniobrar el dron:
+`$ python3 keyboard.py`
+- En seguida se nos mostrará lo siguiente:
+
+- Ahora podemos maniobrar el dron Parrot Bebop con el teclado. 
+- Para poder Acceder a la cámara del Dron Bebop Utilizamos el comando:
 `$ rqt_image_view `
-y podemos ver lo siguiente el en pantalla:
+- Y podemos ver lo siguiente el en pantalla:
+
+
