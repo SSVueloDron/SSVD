@@ -51,6 +51,7 @@ Lo siguiente ahora es hacer un mapeo de las teclas,en python, que se usaran para
 - Ahora ejecutamos el comando para utilizar las teclas para maniobrar el dron:
 `$ python3 keyboard.py`
 - En seguida se nos mostrará lo siguiente:
+[![](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)
 
 - Ahora podemos maniobrar el dron Parrot Bebop con el teclado. 
 - Para poder Acceder a la cámara del Dron Bebop Utilizamos el comando:
