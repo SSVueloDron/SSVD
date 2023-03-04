@@ -139,6 +139,7 @@ git@github.com:leggedrobotics/darknet_ros.git
 cd ../
 catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
+
 - Listo, ya se tiene YOLO ROS instalado.
 
 ## Instalación de CUDA
