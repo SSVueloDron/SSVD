@@ -19,9 +19,11 @@ El cual nos presenta todas las funciones del dron, las cuales podemos hacer uso 
 Una vez conocidas las funciones del dron y sabiendo la funcionalidad de ROS, comenzamos con la comunicación con nuestro dron, para esto en terminal ejecutamos el siguiente comando:
 `$ roslaunch bebop_driver bebop_node.launch`
 
-Lo que hace este comando es ejecutar un nodo de Ros llamado bebop donde se asignan parámetros para poder identificar las características o funcionalidades al dron, podemos ver que obtenemos el ip del dron pues al conectarse al wifi del drop es la que este posee, bebop_node.launch contiene el código(ver imagen 1)  al que desde otra terminal se le pueden mandar diferentes comandos por ejemplo:
+Lo que hace este comando es ejecutar un nodo de Ros llamado bebop donde se asignan parámetros para poder identificar las características o funcionalidades al dron, podemos ver que obtenemos el ip del dron pues al conectarse al wifi del drop es la que este posee, bebop_node.launch contiene el código (Puede observarse en la siguiente imagen)  al que desde otra terminal se le pueden mandar diferentes comandos por ejemplo:
 
 `$rosrun pub -- once /bebop/Takeoff std_msgs/Empty `
+
+[![](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)
 
 El cual es un comando para hacer que el dron empiece a volar, es decir se mantiene en un solo lugar.
 
@@ -46,16 +48,23 @@ Lo siguiente ahora es hacer un mapeo de las teclas,en python, que se usaran para
 - Lo que necesitábamos ahora es un intérprete de estas teclas, para poder conectarse al dron y que este pudiera ejecutar lo deseado, esto se realizó con el siguiente código en Python llamado `interpreter.py :`
 
 - Una vez que terminamos de codificar podemos ejecutarlos para poder manejar el dron, primero debemos ejecutar el intérprete para poder conectarse al dron, esto se hizo con el siguiente comando:
+
 `$ python3 interpreter.py`
 
+[![](https://github.com/SSVueloDron/SSVD/blob/main/img/interpreter.jpg)](https://github.com/SSVueloDron/SSVD/blob/main/img/interpreter.jpg)
+
 - Ahora ejecutamos el comando para utilizar las teclas para maniobrar el dron:
+
 `$ python3 keyboard.py`
 - En seguida se nos mostrará lo siguiente:
-[![](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)](https://github.com/SSVueloDron/SSVD/blob/main/img/bebop_nodelauch.png)
+
+[![](https://github.com/SSVueloDron/SSVD/blob/main/img/batery96.jpg)](https://github.com/SSVueloDron/SSVD/blob/main/img/batery96.jpg)
 
 - Ahora podemos maniobrar el dron Parrot Bebop con el teclado. 
 - Para poder Acceder a la cámara del Dron Bebop Utilizamos el comando:
 `$ rqt_image_view `
 - Y podemos ver lo siguiente el en pantalla:
+
+[![](https://github.com/SSVueloDron/SSVD/blob/main/img/pantalla.png)](https://github.com/SSVueloDron/SSVD/blob/main/img/pantalla.png)
 
 
