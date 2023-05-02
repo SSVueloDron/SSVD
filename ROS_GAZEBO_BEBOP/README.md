@@ -102,7 +102,7 @@ vim ~/catkin_ws/src/bebop_autonomy/bebop_driver/src/bebop_video_decoder.cpp
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/catkin_ws/devel/lib/parrot_arsdk
 ```
-![](https://github.com/SSVueloDron/SSVD/blob/main/img/bashedit.png)
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/bashredit.png)
 
 - Instalamos los siguientes paquetes
 ```
@@ -140,12 +140,12 @@ git@github.com:leggedrobotics/darknet_ros.git
 - Modificamos el archivo Makefile en `~/catkin_ws/src/darknet_ros/darknet/Makefile` y borramos `-gencode arch=compute_30,code=sm_30`  de la línea 7. 
 - Ahora quedará de la siguiente manera:
 
-![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefile1.png)
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefileedit1.png)
 
 - También borraremos la misma línea del documento `~/catkin_ws/src/darknet_ros/darknet_ros/CMakeLists.txt` que se encuentra en la linea 26. 
 - Quedará de la siguiente manera:
 
-![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefile2.png)
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefileedit2.png)
 
 - Volvemos al workspace y hacemos el build en Release mode.
 ```
