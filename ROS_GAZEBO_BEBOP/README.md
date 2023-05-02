@@ -33,6 +33,8 @@ rosdep update
 ```
 roscore
 ```
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/roscore.png)
+
 - Ahora que ROS está instalado, necesitamos configurar un workspace catkin con los siguientes comandos
 ```
 mkdir -p ~/catkin_ws/src
@@ -100,6 +102,8 @@ vim ~/catkin_ws/src/bebop_autonomy/bebop_driver/src/bebop_video_decoder.cpp
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/catkin_ws/devel/lib/parrot_arsdk
 ```
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/bashedit.png)
+
 - Instalamos los siguientes paquetes
 ```
 sudo apt install ros-noetic-joy ros-noetic-joy-teleop ros-noetic-teleop-twist-joy
@@ -135,8 +139,14 @@ git@github.com:leggedrobotics/darknet_ros.git
 ```
 - Modificamos el archivo Makefile en `~/catkin_ws/src/darknet_ros/darknet/Makefile` y borramos `-gencode arch=compute_30,code=sm_30`  de la línea 7. 
 - Ahora quedará de la siguiente manera:
+
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefile1.png)
+
 - También borraremos la misma línea del documento `~/catkin_ws/src/darknet_ros/darknet_ros/CMakeLists.txt` que se encuentra en la linea 26. 
 - Quedará de la siguiente manera:
+
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/makefile2.png)
+
 - Volvemos al workspace y hacemos el build en Release mode.
 ```
 cd ../
@@ -168,6 +178,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_
 ## Activando CUDA y OPENCV en yolo_ros
 - Cambiamos la primera línea del Makefile en `~/catkin_ws/src/darknet_ros/darknet/Makefile` para que diga GPU=1 y OPENCV=1 en la línea 3.
 - También se cambiará la versión de opencv a opencv4 de la siguiente manera:
+
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/actCuda.png)
+
 ```
 cd ~/catkin_ws/src/darknet_ros/darknet
 make
