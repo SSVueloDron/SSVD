@@ -93,6 +93,9 @@ vim ~/catkin_ws/src/bebop_autonomy/bebop_driver/src/bebop_video_decoder.cpp
  `CODEC_FLAG2_CHUNKS →  AV_CODEC_FLAG2_CHUNKS`
  
 - Quedando de la siguiente manera:
+
+![](https://github.com/SSVueloDron/SSVD/blob/main/img/bebopvideo.png)
+
 - Luego añadimos la siguiente línea al .bashrc
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/catkin_ws/devel/lib/parrot_arsdk
