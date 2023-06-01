@@ -16,6 +16,7 @@ class DroneController(object):
         self.pubTakeoff = rospy.Publisher('/bebop/takeoff',Empty,queue_size=1000)
         self.pubCommandPilot = rospy.Publisher('/bebop/cmd_vel',Twist,queue_size=1000)
         self.pubCommandCamera = rospy.Publisher('/bebop/camera_control',Twist,queue_size=1000)
+        self.pubReset = rospy.Publisher('/bebop/reset', Empty, queue_size=1000)
 
         #Setup regualatr publishing of control packets
         self.command = Twist()
